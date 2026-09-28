@@ -1,9 +1,7 @@
-body{background-color:black;}
 /* ---------------Box Sizing----------------- */
 html {
     box-sizing: border-box;
-}
-*,
+}*,
 *:before,
 *:after {
     box-sizing: inherit;
@@ -18,4 +16,10 @@ html {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-}
+}/* --------Global Style*/
+body {font: 1em sans-serif; margin:0;}
+header.primary {background-color:chocolate;
+    color:white;
+    text-align:center;
+    text-shadow: 2px 2px black;
+    }
