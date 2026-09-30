@@ -22,4 +22,22 @@ header.primary {background-color:chocolate;
     color:white;
     text-align:center;
     text-shadow: 2px 2px black;
+    padding: 40px;
+    padding:20px 40px;}
+header.primary a{color:#ffffff;
+    text-decoration:none;}
+header.primary p.subtitle{font-size:2.3;
+    margin-block-end:10px 0 20px;
+letter: spacing 0;;}
+header.primary nav{}
+header.primary nav ul{padding:0;
+    diplay:flex;
+    flex-direction:row;
+    justify-content:left;}
+header.primary nav ul li{list-style-type:none;}
+header.primary nav ul li a{background-color:rgba(0, 0, 0, 0.5);
+    padding:5px 7.5px;
+    display:block;
+    border: radius 50px;
+    border:1px solid rgbA(255, 255, 0.5);
     }
