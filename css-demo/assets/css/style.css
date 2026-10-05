@@ -4,8 +4,8 @@ html {
 }*,
 *:before,
 *:after {
-    box-sizing: inherit;
-}/* Skip link utility: hidden until focused */
+    box-sizing: inherit;}
+    /* Skip link utility: hidden until focused */
 .visually-hidden {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -15,8 +15,12 @@ html {
     padding: 0;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
-}/* --------Global Style*/
+    width: 1px;}
+    /*utility classes*/
+    .container{width: 80vw;
+    max-width:992px;
+    margin: 30px auto;}
+/* --------Global Style*/
 body {font: 1em sans-serif; margin:0;}
 header.primary {background-color:chocolate;
     color:white;
@@ -31,8 +35,9 @@ header.primary p.subtitle{font-size:2.3;
 letter: spacing 0;;}
 header.primary nav{}
 header.primary nav ul{padding:0;
-    diplay:flex;
+    display:flex;
     flex-direction:row;
+    gap: 30px;
     justify-content:left;}
 header.primary nav ul li{list-style-type:none;}
 header.primary nav ul li a{background-color:rgba(0, 0, 0, 0.5);
@@ -40,4 +45,11 @@ header.primary nav ul li a{background-color:rgba(0, 0, 0, 0.5);
     display:block;
     border: radius 50px;
     border:1px solid rgbA(255, 255, 0.5);
-    }
+    flex:1;
+    transition:0.5 s; }
+    header.primary nav ul li  a:hover{background-color:rgbA(0, 0, 0.8);}
+#content h2{border: bottom 1px solid #c0c0c0;}
+#content p{line-height:1.6;}
+    /*media queries*/
+@media screen & (max-width:500px){header.primary nav{flex-direction:row;
+    gap: 10px;}}
