@@ -16,11 +16,13 @@ html {
     position: absolute;
     white-space: nowrap;
     width: 1px;}
-    /*utility classes*/
-    .container{width: 80vw;
+/*utility classes*/
+.container{width: 80vw;
     max-width:992px;
     margin: 30px auto;}
-/* --------Global Style*/
+img{max-width:100%;}
+
+    /* --------Global Style*/
 body {font: 1em sans-serif; margin:0;}
 header.primary {background-color:chocolate;
     color:white;
@@ -32,9 +34,7 @@ header.primary a{color:#ffffff;
     text-decoration:none;}
 header.primary p.subtitle{font-size:2.3;
     margin-block-end:10px 0 20px;
-letter: spacing 0;;}
-header.primary nav{}
-header.primary nav ul{padding:0;
+    letter-spacing:0;}header.primary nav ul{padding:0;
     display:flex;
     flex-direction:row;
     gap: 30px;
@@ -50,6 +50,30 @@ header.primary nav ul li a{background-color:rgba(0, 0, 0, 0.5);
     header.primary nav ul li  a:hover{background-color:rgbA(0, 0, 0.8);}
 #content h2{border: bottom 1px solid #c0c0c0;}
 #content p{line-height:1.6;}
-    /*media queries*/
-@media screen & (max-width:500px){header.primary nav{flex-direction:row;
-    gap: 10px;}}
+#blog{display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+flex-wrap:wrap;}
+#blog h2{flex:0 0 100%;
+text-align:left;}
+figure{margin:0;}
+#blog article.post{padding:10px;
+    flex: 1}
+#blog article time, #blog figcaption{text-transform:uppercase;
+    font-size:0.6 rm;}
+#blog a{color:blueviolet;}
+aside[aria-label="Sidebar"]{background-color:#c0c0c0;
+    color:#ffffff;
+    padding: 40px 0;}
+aside div.container{display:flex;
+    justify-content:center;
+    gap:40px;}
+aside .container a{color:aliceblue;}
+article.widget footer{display:none;}
+
+/*media queries*/
+@media screen and (max-width:500px){
+    header.primary nav{flex-direction:row;
+    gap:10px;}
+#blog h2{text-align:center;}}
