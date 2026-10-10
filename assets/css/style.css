@@ -1,5 +1,10 @@
-a {color:#1a0dab;}
-body{background-color:black;}
+a {color:#A0410D;}
+body{background-color:#FAF7F2;
+    font:1em/1.6 "Open Sans", sans-serif;
+    margin:0;
+    padding:20px 40px;}
+h1{font-family:"Merriweather", serif;}
+nav ul li{margin-block-end:10px;}
 /* ---------------Box Sizing----------------- */
 html {
     box-sizing: border-box;
