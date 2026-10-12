@@ -1,9 +1,13 @@
 a {color:#A0410D;}
 body{background-color:#FAF7F2;
+    color:#2B2118;
     font:1em/1.6 "Open Sans", sans-serif;
     margin:0;
     padding:20px 40px;}
-h1{font-family:"Merriweather", serif;}
+h1{font-family:"Merriweather", serif;
+    color:#8B4513;
+    border-bottom:1px solid #D2691E;
+    padding-bottom:5px;}
 nav ul li{margin-block-end:10px;}
 /* ---------------Box Sizing----------------- */
 html {
