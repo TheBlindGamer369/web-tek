@@ -126,6 +126,15 @@ th {background-color: var(--wood);
 td {border: 1px solid var(--ash);
     padding: 5px;}
 td:nth-child(n+2) {text-align: right;}
+#practice ol{list-style-type:lower-roman;}
+#practice ul ul{list-style:square;}
+#practice dt{font-weight:bold;}
+#practice dd{margin:0;}
+#practice dd+dt{margin-top:20px;}
+#practice site{display:block;
+    text-align:right;
+    margin-top:15px;
+    font-size:0.8rm}
 
 /*media queries*/
 @media screen and (max-width: 500px) {header.primary nav ul {flex-direction: row;
